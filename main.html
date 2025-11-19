@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reem Aldamen – Portfolio</title>
+
+  <style>
+    /* ---------- General Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f9fafc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background: linear-gradient(90deg, #2a9d8f, #264653);
+      color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 2em;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f4a261;
+    }
+
+    /* ---------- About Section ---------- */
+    section {
+      padding: 60px 0;
+    }
+
+    #about {
+      background: #e9f5f4;
+      border-top: 4px solid #2a9d8f;
+    }
+
+    #about h2 {
+      text-align: center;
+      color: #264653;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.05em;
+      text-align: justify;
+      line-height: 1.8;
+    }
+
+    #about h3 {
+      margin-top: 20px;
+      color: #2a9d8f;
+    }
+
+    /* ---------- Portfolio Section ---------- */
+    #portfolio {
+      background: #fff;
+    }
+
+    #portfolio h2 {
+      text-align: center;
+      color: #264653;
+      margin-bottom: 40px;
+    }
+
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      width: 85%;
+      margin: auto;
+    }
+
+    .portfolio-item {
+      background: #f4f4f9;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .portfolio-item h3 {
+      color: #2a9d8f;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-item p {
+      color: #444;
+      font-size: 0.95em;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2a9d8f;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #21867a;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: #264653;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Reem Aldamen</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am <strong>Reem Aldamen</strong>, a senior Electrical and Computer Engineering student
+        with a passion for embedded systems, digital signal processing,
+        and smart technologies. I enjoy building innovative solutions that connect
+        hardware and AI-powered smart systems.
+        My technical skills include MATLAB, Python, and Arduino, along with hands-on experience in circuits,
+        sensors and microcontrollers. I love solving real-world problems through design, logic, and creativity.
+        I’m an engineer & innovator, a thinker, and someone who loves turning ideas into reality.
+      </p>
+
+      <h3>Education</h3>
+      <p><strong>Effat University – Jeddah, Saudi Arabia</strong><br>
+      B.S. in Electrical and Computer Engineering</p>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item">
+          <h3>Lab 1 AI – Basic Python and NLP Billing System</h3>
+          <p>
+            A Natural Language Processing (NLP)-based billing system developed in Python.
+            It processes text input for products, quantities, and prices, then generates
+            an automatic structured bill.
+          </p>
+          <a href="https://github.com/leena920-spec/Lab-1-Basic-Python-and-NLP-Billing-System"
+             target="_blank" class="btn">🔗 View on GitHub</a>
+        </div>
+
+        <div class="portfolio-item">
+          <h3>Lab 2 AI- IoT Smart Sensor System</h3>
+          <p>
+            A prototype IoT system integrating multiple environmental sensors to monitor
+            and transmit real-time data for predictive analytics.</p>
+            <a href="  https://github.com/Dareem23/Lab-2-AI--IoT-Smart-Sensor-System"
+             target="_blank" class="btn">🔗 View on GitHub</a>
+      
+        </div>
+      
+
+        <div class="portfolio-item">
+          <h3>Project 3 – AI-Powered Smart Glasses</h3>
+          <p>
+            Designed AI-based smart glasses to assist visually impaired users by using
+            computer vision for obstacle detection and voice feedback for navigation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Reem Aldamen | Effat University | All Rights Reserved
+  </footer>
+</body>
+</html>
